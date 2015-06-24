@@ -68,7 +68,7 @@
         };
         this.amazon = {
             device: match(amazon_silk, ua)
-        },
+        };
         this.windows = {
             phone:  match(windows_phone, ua),
             tablet: match(windows_tablet, ua),
