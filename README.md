@@ -44,6 +44,10 @@ The following properies of the `isMobile` object will either be `true` or `false
 * `isMobile.android.tablet`
 * `isMobile.android.device` (any mobile Android device)
 
+### Amazon devices
+
+* `isMobile.amazon.device` (any mobile Amazon device)
+
 ### Windows devices
 
 * `isMobile.windows.phone`
