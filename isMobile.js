@@ -82,7 +82,7 @@
             device:       match(other_blackberry, ua) || match(other_blackberry_10, ua) || match(other_opera, ua) || match(other_firefox, ua)
         };
         this.seven_inch = match(seven_inch, ua);
-        this.any = this.apple.device || this.android.device || this.windows.device || this.other.device || this.seven_inch;
+        this.any = this.apple.device || this.android.device || this.amazon.device || this.windows.device || this.other.device || this.seven_inch;
         // excludes 'other' devices and ipods, targeting touchscreen phones
         this.phone = this.apple.phone || this.android.phone || this.windows.phone;
         // excludes 7 inch devices, classifying as phone or tablet is left to the user
