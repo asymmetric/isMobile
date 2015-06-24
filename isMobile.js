@@ -16,6 +16,7 @@
         apple_tablet        = /iPad/i,
         android_phone       = /(?=.*\bAndroid\b)(?=.*\bMobile\b)/i, // Match 'Android' AND 'Mobile'
         android_tablet      = /Android/i,
+        amazon_silk         = /\bSilk\b/i,
         windows_phone       = /IEMobile/i,
         windows_tablet      = /(?=.*\bWindows\b)(?=.*\bARM\b)/i, // Match 'Windows' AND 'ARM'
         other_blackberry    = /BlackBerry/i,
@@ -65,6 +66,9 @@
             tablet: !match(android_phone, ua) && match(android_tablet, ua),
             device: match(android_phone, ua) || match(android_tablet, ua)
         };
+        this.amazon = {
+            device: match(amazon_silk, ua)
+        },
         this.windows = {
             phone:  match(windows_phone, ua),
             tablet: match(windows_tablet, ua),
